@@ -84,18 +84,39 @@ The tool will go through the following steps:
 ### Read the search data into a DataFrame, and slice the data
 * Import of data to analyze
 
-### Analyze Google search data
-* 
-
-### Search for patterns in google search data and vizualize this data
-* 
+### Analyze Google search data 2earch for patterns in google search data and vizualize this data
+* Group the hourly search data to plot the average traffic by the day of the week
+* Visualize traffic as a heatmap
+* Group the search data by the week of the year
 
 ![mercado_heat_map.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/mercado_heat_map.jpg)
 
-### Cluster Cryptocurrencies with K-means Using the Original Data
-* Cluster data using KMeans method using original data
+### Relate the Search Traffic to Stock Price Patterns
+* Import and plot the stock price data
+* Analyze time series for trends
+* Create 3 additional data columns
+    * Lagged Search Trends (offset search traffic by 1 hour)
+    * Stock Volatility with 4 hour rolling average
+    * Hourly Stock Return (Percentage stock price change per hour)
+* Analyze if predictable relationships exist between the lagged search traffic and the stock volatility or between the lagged search traffic and the stock price returns
 
-![KMeans_org](https://github.com/nielsdehaan1977/Fintech_Module10/blob/main/Images/scatter_org.jpg)
+
+### Create a Time Series Model with Prophet and produce a time series model that analyzes and forecasts patterns in the hourly search data
+
+* Set up the Google search data for a Prophet forecasting model.
+
+* After estimating the model, plot the forecast. How's the near-term forecast for the popularity of MercadoLibre?
+
+* Plot the individual time series components of the model to answer the following questions:
+
+    * What time of day exhibits the greatest popularity?
+
+    * Which day of the week gets the most search traffic?
+
+    * What's the lowest point for search traffic in the calendar year?
+
+![trends_forecast.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/trends_forecast.jpg)
+
 
 ### Optimize Clusters with Principal Component Analysis
 
