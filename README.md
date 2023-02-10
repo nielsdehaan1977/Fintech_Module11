@@ -118,22 +118,10 @@ The tool will go through the following steps:
 ![trends_forecast.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/trends_forecast.jpg)
 
 
-### Optimize Clusters with Principal Component Analysis
+### Forecast Revenue by Using Time Series Models
+* Produce a forecast using Prophet for the expected total sales in the next quarter. Include the best- and worst-case scenarios to help them make better plans.
 
-* Performs a principal component analysis (PCA) and reduces the features to three principal components
-
-### Find the Best Value for l Using the PCA Data
-* Find the best value for the amount of clusters to use in PCA data analysis via elbow method
-
-### Cluster the Cryptocurrencies with K-means Using the PCA Data
-* Cluster data using KMeans method using PCA data
-
-### Visualize and Compare the Results
-* Visualize elbows and clusters for both original and pca data and compare results
-
-![elbow_compare](https://github.com/nielsdehaan1977/Fintech_Module10/blob/main/Images/elbow_compare.jpg)
-![cluster_compare](https://github.com/nielsdehaan1977/Fintech_Module10/blob/main/Images/cluster_compare.jpg)
-
+![salesforecast_using_prophet.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/salesforecast_using_prophet.jpg)
 
 ## Contributor(s)
 
