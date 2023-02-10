@@ -50,41 +50,47 @@ This project leverages Jupyter notebook using Google Colab with the following pa
 ### Before running the application first configure a [google colab](https://colab.research.google.com/) for the project. 
 
 #### Step1: Import the downloaded jupyter notebook into google colab. 
-```python
-    conda activate dev
-```
-#### Step2: install the following libraries (if not installed yet) by typing:
-```python
-    pip install pandas
-    pip install -U scikit-learn
-    conda install -c pyviz hvplot
 
+![upload_file_google_colab.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/upload_file_google_colab.jpg)
+
+#### Step2: install the following libraries by typing:
+```python
+!pip install pystan
+!pip install prophet
+!pip install hvplot
+!pip install holoviews
+!pip install -U bokeh
+!pip install hvplot
     
 ```
-#### Step3: Start Jupyter Lab
-Jupyter Lab can be started by:
-1. Activate your developer environment in Terminal or Git Bash (already done in step 1)
-2. Type "jupyter lab --ContentsManager.allow_hidden=True" press enter (This will open Jupyter Lab in a mode where you can also see hidden files)
+#### Step3: upload data files
 
-![JupyterLab](https://github.com/nielsdehaan1977/Fintech_Module10/blob/main/Images/JupyterLab.PNG)
+use the following code to upload files into google colab:
+
+from google.colab import files
+uploaded = files.upload()
+
+after that you can use pd.read_csv to read data files (if in csv format)
+
+![google_colab_upload_files_method.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/google_colab_upload_files_method.jpg)
 
 
 ## Usage
 
-To use the crypo_investments jupyter lab notebook, simply clone the full repository and open the **crypto_investments.ipynb** file in Jupyter Lab. 
+To use the forecasting_net_prophet jupyter lab notebook in google colab, simply clone the full repository and open the **forecasting_net_prophet.ipynb** file in in google colab. 
 
 The tool will go through the following steps:
 
-### Import the Data
+### Read the search data into a DataFrame, and slice the data
 * Import of data to analyze
 
-### Prepare the Data
-* Prepare data for analysis
+### Analyze Google search data
+* 
 
-### Find the Best Value for k Using the Original Data
-* Find the best value for the amount of clusters to use in analysis of original data via elbow method
+### Search for patterns in google search data and vizualize this data
+* 
 
-![elbow_method_graph](https://github.com/nielsdehaan1977/Fintech_Module10/blob/main/Images/elbow.jpg)
+![mercado_heat_map.jpg](https://github.com/nielsdehaan1977/Fintech_Module11/blob/main/Images/mercado_heat_map.jpg)
 
 ### Cluster Cryptocurrencies with K-means Using the Original Data
 * Cluster data using KMeans method using original data
